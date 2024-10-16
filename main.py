@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 from keras.utils import to_categorical
 from keras.models import load_model
-
+import uvicorn
 # Load the model (make sure to specify the correct path)
 conditional_autoencoder = load_model("conditional_autoencoder.keras")
 
@@ -68,5 +68,5 @@ async def root():
 
 
 # if __name__ == "__main__":
-#     import uvicorn
+#
 #     uvicorn.run(app, host="0.0.0.0", port=8000)
