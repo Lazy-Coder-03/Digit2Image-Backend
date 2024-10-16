@@ -106,3 +106,5 @@ wcwidth==0.2.5
 Werkzeug==2.2.2
 wrapt==1.16.0
 zipp==3.8.1
+fastapi==0.95.2  # or the version you are using
+uvicorn[standard]==0.23.2  
