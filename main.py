@@ -14,8 +14,8 @@ app = FastAPI()
 # Allow CORS for the frontend to access this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5500"]
-    allow_origins=["https://digit2image-frontend.onrender.com/"]
+    allow_origins=["http://localhost:5500"],
+    allow_origins=["https://digit2image-frontend.onrender.com/"],
     allow_origins=["*"],  # Adjust this in production for security
     allow_credentials=True,
     allow_methods=["*"],
